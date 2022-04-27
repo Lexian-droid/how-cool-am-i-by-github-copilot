@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>How Cool Am I? - Generated with Github Copilot</title>
+    <link rel="icon" href="https://github.com/fluidicon.png" type="image/x-icon">
+</head>
+<body class="w3-red">
+    <div class="w3-container w3-teal">
+        <h1>How cool am I?</h1>
+    </div>
+    <div class="w3-container w3-light-blue w3-center">
+        <p>You are this cool:</p>
+    </div>
+    <div id="containing_coolness" class="w3-container w3-red w3-center">
+        <p id="coolness" class="w3-xxlarge"></p>
+    </div>
+    <div class="w3-container w3-blue w3-bottom w3-center">
+        <p id="credits">something here</p>
+    </div>
+    <script>
+        // create a random number variable with 0 to 100 
+        var randomNumber = Math.floor(Math.random() * 100);
+        // replace the paragraph with id "Coolness" with the random number
+        document.getElementById("coolness").innerHTML = randomNumber;
+        // and append "%" to the end of the paragraph
+        document.getElementById("coolness").innerHTML += "%";
+        // change the color of div with id "containing coolness" and site background depending on how high the random number is
+        if (randomNumber < 10) {
+            document.getElementById("containing_coolness").className = "w3-container w3-red w3-center";
+            document.body.className = "w3-red";
+        } else if (randomNumber < 50) {
+            document.getElementById("containing_coolness").className = "w3-container w3-orange w3-center";
+            document.body.className = "w3-orange";
+        } else if (randomNumber < 80) {
+            document.getElementById("containing_coolness").className = "w3-container w3-yellow w3-center";
+            document.body.className = "w3-yellow";
+        } else if (randomNumber > 80) {
+            document.getElementById("containing_coolness").className = "w3-container w3-lime w3-center";
+            document.body.className = "w3-lime";
+        }
+        // give credit to Github copilot for creating the code, and the W3Schools for the CSS and TimeWisely for making the website put this credit into "Credit" add hyperlinks to all respectively
+        document.getElementById("credits").innerHTML = "Code by <a href='https://copilot.github.com/'>Github Copilot</a>, CSS by <a href='https://www.w3schools.com/'>W3Schools</a>, and <a href='https://timewisely.net'>TimeWisely</a> for hosting the website";
+    </script>
+</body>
+</html>
