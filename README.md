@@ -1,6 +1,6 @@
 # How Cool am I
 ### By Github Copilot
-### Idea by Lexian-Droid (TimeWisely)
+### Idea by Lexian-Droid
 
 # What is this project?
 This is the first project I made with the help of Github Copilot. It was able to understand roughly **90%** of what I was telling it to do, and It also was able to infer much of what I was saying with proper context.
